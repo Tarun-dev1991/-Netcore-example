@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UserAnalyticsModelStoreContainer" CdmEntityContainer="UserAnalyticsEntities">
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="UserAnalyticsModel.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetail">
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+          <ScalarProperty Name="UserSessionId" ColumnName="UserSessionId" />
+          <ScalarProperty Name="EndUrl" ColumnName="EndUrl" />
+          <ScalarProperty Name="StartUrl" ColumnName="StartUrl" />
+          <ScalarProperty Name="SessionDateTime" ColumnName="SessionDateTime" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="UserAnalyticsModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="browser" ColumnName="browser" />
+          <ScalarProperty Name="os" ColumnName="os" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="DomainName" ColumnName="DomainName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSessions">
+      <EntityTypeMapping TypeName="UserAnalyticsModel.UserSession">
+        <MappingFragment StoreEntitySet="UserSession">
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="SessionVistTime" ColumnName="SessionVistTime" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
